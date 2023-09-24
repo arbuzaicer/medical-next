@@ -1,0 +1,27 @@
+.navigation {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.link {
+  color: white;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.link:before {
+  bottom: -5px;
+  left: -15%;
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  transition: all 0.2s;
+  background-color: white;
+}
+
+.link:hover:before {
+  width: 130%;
+}
